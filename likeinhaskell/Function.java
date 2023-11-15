@@ -18,11 +18,16 @@ public interface Function<R,T> {
     R apply(T param);
     // TODO task 5: For even more challenge, really tricky!
     //  Give the compose() function a default implementation.
-    R compose(T param);
+    // R compose(T param);
 }
+class add implements Function<Integer,Integer> {
+    public Integer apply(Integer x) {
+        return x;
+    }
+
 class funcApp implements Function<Double,Double> {
     public Double apply(Double param) {
-        return null;  
+        return null;
     }
 
     public Double compose(Double param) {
