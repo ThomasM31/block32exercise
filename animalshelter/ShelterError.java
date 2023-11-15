@@ -5,11 +5,11 @@ package animalshelter;
  */
 public class ShelterError {
 
-    public static void main(String[] args){
-        CatShelter catShelter = new CatShelter();
+    public static void main(String[] args) {
+        AnimalShelter<Cat> catShelter = new AnimalShelter<Cat>();
         Dog badBoyRex = new Dog();
 
-        // TODO task 2a: It should not be possible to inser a dog into a cat
+        // TODO task 2a: It should not be possible to insert a dog into a cat
         //  shelter. The line below should give a STATIC type error (i.e. in
         //  IntelliJ a red squiggly line under the argument badBoyRex). You
         //  should *not* edit this line though - the edits should be done to
